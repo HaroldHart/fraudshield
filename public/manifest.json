@@ -1,0 +1,20 @@
+{
+  "name": "FraudShield — India's Fraud Protector",
+  "short_name": "FraudShield",
+  "description": "AI-powered protection from digital fraud, scams and phishing in India",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f14",
+  "theme_color": "#38bdf8",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icons.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["security", "utilities", "education"],
+  "lang": "en-IN"
+}
