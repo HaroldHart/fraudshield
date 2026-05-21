@@ -336,7 +336,7 @@ export default function FraudShield() {
   async function callAI(system, userMsg, setRes, setLoad) {
     setLoad(true); setRes(null);
     try {
-      const r = await fetch("https://api.anthropic.com/v1/messages",{
+      const r = await fetch("/api/claude",{
         method:"POST", headers:{"Content-Type":"application/json"},
         body:JSON.stringify({ model:"claude-sonnet-4-20250514", max_tokens:1200,
           system, messages:[{role:"user",content:userMsg}] })
