@@ -756,7 +756,30 @@ Respond ONLY in valid JSON (no markdown):
         )}
       </main>
 
-      <footer style={{borderTop:"1px solid #1e293b",padding:"16px 20px",textAlign:"center",fontSize:12,color:"#334155",fontWeight:600,letterSpacing:1}}>
+      {/* Support / Donation Banner */}
+      <div style={{background:"linear-gradient(135deg,#0c2340,#1a3a5c)",borderTop:"2px solid #1e3a5f",padding:"20px 20px",textAlign:"center"}}>
+        <div style={{fontSize:16,fontWeight:800,color:"#38bdf8",marginBottom:6}}>❤️ Support DigiSentry</div>
+        <div style={{fontSize:13,color:"#94a3b8",marginBottom:16,lineHeight:1.7}}>
+          DigiSentry is free for everyone. If it helped protect you or your family,<br/>
+          consider supporting us to keep it running and improving.
+        </div>
+        <div style={{display:"flex",justifyContent:"center",gap:12,flexWrap:"wrap"}}>
+          <a href="upi://pay?pa=haroldnormanhart@gmail.com&pn=DigiSentry&am=50&cu=INR&tn=Supporting DigiSentry App" style={{padding:"12px 24px",background:"linear-gradient(135deg,#166534,#16a34a)",borderRadius:10,color:"#fff",fontWeight:800,fontSize:14,textDecoration:"none",display:"inline-block"}}>
+            💚 ₹50 via UPI
+          </a>
+          <a href="upi://pay?pa=haroldnormanhart@gmail.com&pn=DigiSentry&am=100&cu=INR&tn=Supporting DigiSentry App" style={{padding:"12px 24px",background:"linear-gradient(135deg,#1d4ed8,#2563eb)",borderRadius:10,color:"#fff",fontWeight:800,fontSize:14,textDecoration:"none",display:"inline-block"}}>
+            💙 ₹100 via UPI
+          </a>
+          <a href="upi://pay?pa=haroldnormanhart@gmail.com&pn=DigiSentry&am=500&cu=INR&tn=Supporting DigiSentry App" style={{padding:"12px 24px",background:"linear-gradient(135deg,#7c3aed,#9333ea)",borderRadius:10,color:"#fff",fontWeight:800,fontSize:14,textDecoration:"none",display:"inline-block"}}>
+            💜 ₹500 via UPI
+          </a>
+        </div>
+        <div style={{fontSize:11,color:"#475569",marginTop:12}}>
+          UPI ID: haroldnormanhart@gmail.com • All payments go directly to the developer
+        </div>
+      </div>
+
+      <footer style={{borderTop:"1px solid #1e293b",padding:"14px 20px",textAlign:"center",fontSize:11,color:"#334155",fontWeight:600,letterSpacing:1}}>
         DIGISENTRY v2 • YOUR DIGITAL GUARDIAN • NOT A SUBSTITUTE FOR OFFICIAL CYBERCRIME REPORTING
       </footer>
     </div>
