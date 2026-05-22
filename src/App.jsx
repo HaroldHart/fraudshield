@@ -21,13 +21,13 @@ const LANGUAGES = {
 /* ─── TRANSLATIONS (key phrases only — AI responds in selected language) ── */
 const T = {
   en: {
-    appName:"FRAUDSHIELD", tagline:"India's AI-Powered Fraud Protector",
+    appName:"DIGISENTRY", tagline:"India's AI-Powered Digital Guardian",
     tabs:["🔗 Link Scanner","📧 Message Check","📞 Phone Lookup","📚 Scam Guide","🧠 Quiz","🚨 Report"],
     emergency:"HELPLINE", alertBanner:"⚠️  Digital arrest scams up 400% — No government agency ever arrests you online  ⚠️",
     enterUrl:"Paste Suspicious Link or URL", scanBtn:"SCAN NOW", scanning:"Scanning...",
     urlPlaceholder:"e.g. https://sbi-kyc-update.xyz or bit.ly/xxxxx",
     pasteMessage:"Paste Any Message or Email", analyzeBtn:"CHECK NOW", analyzing:"Analyzing...",
-    msgPlaceholder:"Paste any SMS, WhatsApp message, or email here — including ones from your bank. Our AI will explain clearly whether it is genuine or suspicious.",
+    msgPlaceholder:"Paste your message here. For bank SMS, first type the Sender ID shown at the top of the SMS (e.g. JD-KOTAKBK: or VM-SBIINB:) then paste the message body. This helps our AI identify genuine bank messages accurately.",
     phoneTitle:"Phone Number Check", phoneSubtitle:"Check if a number is linked to known scam patterns",
     enterPhone:"Enter Phone Number", checkBtn:"CHECK", checking:"Checking...",
     phonePlaceholder:"+91 XXXXXXXXXX or any number",
@@ -52,16 +52,16 @@ const T = {
     startQuiz:"Start Quiz →", allLevels:"All Questions", beginner:"Beginner",
     intermediate:"Intermediate", advanced:"Advanced",
     emergencyContacts:"Emergency Contacts",
-    genuineNote:"💡 TRAI Registered SMS Prefixes — These are SAFE from official senders: VM (Verified/Transactional) • JD (Jio Transactional) • BW, TM, CP, TP (Transactional) • AD, VA, TA (Promotional/Verified Advertising). Examples: JD-KOTAKBK, VM-SBIINB, AD-HDFCBK, VA-TATACAP, BW-ICICIB. ⚠️ Even genuine SMS should NEVER ask for OTP, PIN or password.",
+    genuineNote:"💡 HOW TO CHECK A BANK SMS: The Sender ID (like JD-KOTAKBK, VM-SBIINB, AD-HDFCBK) appears at the TOP of the SMS as the sender's name — not inside the message. When pasting here, first TYPE the Sender ID followed by a colon, then paste the message. Example: 'JD-KOTAKBK: Rs.5000 debited from your a/c...' — Our AI will then correctly identify it as genuine. All TRAI registered prefixes: VM, JD, BW, TM, CP, TP (Transactional) • AD, VA, TA (Promotional). ⚠️ Even genuine SMS should NEVER ask for your OTP, PIN or password.",
   },
   hi: {
-    appName:"फ्रॉडशील्ड", tagline:"भारत का AI धोखाधड़ी रक्षक",
+    appName:"डिजीसेंट्री", tagline:"भारत का AI धोखाधड़ी रक्षक",
     tabs:["🔗 लिंक स्कैनर","📧 संदेश जाँच","📞 फोन जाँच","📚 घोटाला गाइड","🧠 प्रश्नोत्तरी","🚨 रिपोर्ट"],
     emergency:"हेल्पलाइन", alertBanner:"⚠️  डिजिटल गिरफ्तारी घोटाले 400% बढ़े — कोई सरकारी एजेंसी ऑनलाइन गिरफ्तारी नहीं करती  ⚠️",
     enterUrl:"संदिग्ध लिंक यहाँ डालें", scanBtn:"जाँचें", scanning:"जाँच हो रही है...",
     urlPlaceholder:"जैसे https://sbi-kyc-update.xyz या bit.ly/xxxxx",
     pasteMessage:"कोई भी संदेश यहाँ डालें", analyzeBtn:"जाँचें", analyzing:"विश्लेषण हो रहा है...",
-    msgPlaceholder:"बैंक SMS, WhatsApp संदेश या ईमेल यहाँ डालें — हमारा AI बताएगा कि यह असली है या धोखा।",
+    msgPlaceholder:"बैंक SMS के लिए: SMS के ऊपर दिखने वाला Sender ID (जैसे JD-KOTAKBK: या VM-SBIINB:) पहले टाइप करें, फिर संदेश चिपकाएं। उदाहरण: 'JD-KOTAKBK: Rs.5000 आपके खाते से काटे गए...'",
     phoneTitle:"फोन नंबर जाँच", phoneSubtitle:"जाँचें कि नंबर किसी घोटाले से जुड़ा है या नहीं",
     enterPhone:"फोन नंबर डालें", checkBtn:"जाँचें", checking:"जाँच हो रही है...",
     phonePlaceholder:"+91 XXXXXXXXXX",
@@ -89,13 +89,13 @@ const T = {
     genuineNote:"💡 TRAI पंजीकृत SMS उपसर्ग — ये आधिकारिक भेजकों से सुरक्षित हैं: VM, JD (Jio), BW, TM, CP, TP (लेनदेन) • AD, VA, TA (प्रचार)। उदाहरण: JD-KOTAKBK, VM-SBIINB, VA-TATACAP। ⚠️ असली SMS भी कभी OTP, PIN या पासवर्ड नहीं मांगते।",
   },
   bn: {
-    appName:"ফ্রডশিল্ড", tagline:"ভারতের AI জালিয়াতি রক্ষক",
+    appName:"ডিজিসেন্ট্রি", tagline:"ভারতের AI জালিয়াতি রক্ষক",
     tabs:["🔗 লিংক স্ক্যান","📧 বার্তা যাচাই","📞 ফোন যাচাই","📚 প্রতারণা গাইড","🧠 কুইজ","🚨 রিপোর্ট"],
     emergency:"হেল্পলাইন", alertBanner:"⚠️  ডিজিটাল গ্রেফতার প্রতারণা 400% বেড়েছে — কোনো সরকারি সংস্থা অনলাইনে গ্রেফতার করে না  ⚠️",
     enterUrl:"সন্দেহজনক লিংক এখানে দিন", scanBtn:"স্ক্যান করুন", scanning:"স্ক্যান হচ্ছে...",
     urlPlaceholder:"যেমন https://sbi-kyc-update.xyz বা bit.ly/xxxxx",
     pasteMessage:"যেকোনো বার্তা এখানে দিন", analyzeBtn:"যাচাই করুন", analyzing:"বিশ্লেষণ হচ্ছে...",
-    msgPlaceholder:"ব্যাংক SMS, WhatsApp বার্তা বা ইমেইল এখানে দিন — AI বলবে এটি আসল না নকল।",
+    msgPlaceholder:"ব্যাংক SMS-এর জন্য: SMS-এর উপরে দেখানো Sender ID (যেমন JD-KOTAKBK: বা VM-SBIINB:) আগে টাইপ করুন, তারপর বার্তা পেস্ট করুন। উদাহরণ: 'JD-KOTAKBK: আপনার অ্যাকাউন্ট থেকে Rs.5000 কাটা হয়েছে...'",
     phoneTitle:"ফোন নম্বর যাচাই", phoneSubtitle:"নম্বরটি পরিচিত প্রতারণার সাথে যুক্ত কিনা দেখুন",
     enterPhone:"ফোন নম্বর দিন", checkBtn:"যাচাই করুন", checking:"যাচাই হচ্ছে...",
     phonePlaceholder:"+91 XXXXXXXXXX",
@@ -123,7 +123,7 @@ const T = {
     genuineNote:"💡 দ্রষ্টব্য: VM-SBIINB, AD-HDFCBK-এর মতো অফিসিয়াল Sender ID থেকে আসা ব্যাংক SMS সাধারণত আসল।",
   },
   es: {
-    appName:"FRAUDSHIELD", tagline:"Protector de Fraude Digital de India",
+    appName:"DIGISENTRY", tagline:"Tu Guardián Digital de India",
     tabs:["🔗 Escáner URL","📧 Verificar Mensaje","📞 Verificar Teléfono","📚 Guía de Estafas","🧠 Quiz","🚨 Reportar"],
     emergency:"EMERGENCIA", alertBanner:"⚠️  Las estafas de arresto digital aumentaron 400% — Ninguna agencia gubernamental te arresta en línea  ⚠️",
     enterUrl:"Pega el enlace sospechoso aquí", scanBtn:"ESCANEAR", scanning:"Escaneando...",
@@ -157,7 +157,7 @@ const T = {
     genuineNote:"💡 Nota: Los mensajes bancarios de IDs oficiales como VM-SBIINB, AD-HDFCBK suelen ser genuinos.",
   },
   fr: {
-    appName:"FRAUDSHIELD", tagline:"Protecteur contre la Fraude Numérique",
+    appName:"DIGISENTRY", tagline:"Votre Gardien Numérique de l'Inde",
     tabs:["🔗 Scanner URL","📧 Vérifier Message","📞 Vérifier Téléphone","📚 Guide Arnaques","🧠 Quiz","🚨 Signaler"],
     emergency:"URGENCE", alertBanner:"⚠️  Les arnaques d'arrestation numérique ont augmenté de 400% — Aucune agence gouvernementale n'arrête en ligne  ⚠️",
     enterUrl:"Collez le lien suspect ici", scanBtn:"ANALYSER", scanning:"Analyse en cours...",
@@ -260,7 +260,7 @@ const T = {
   },
   ta: { appName:"ஃப்ராட்ஷீல்ட்", tagline:"இந்தியாவின் AI மோசடி பாதுகாப்பாளர்", tabs:["🔗 இணைப்பு சோதனை","📧 செய்தி சோதனை","📞 தொலைபேசி சோதனை","📚 மோசடி வழிகாட்டி","🧠 வினாவிடை","🚨 புகார்"], emergency:"உதவி எண்", alertBanner:"⚠️  டிஜிட்டல் கைது மோசடிகள் 400% அதிகரித்தன — எந்த அரசு நிறுவனமும் ஆன்லைனில் கைது செய்வதில்லை  ⚠️", enterUrl:"சந்தேகமான இணைப்பை இங்கே ஒட்டவும்", scanBtn:"சோதிக்கவும்", scanning:"சோதிக்கிறது...", urlPlaceholder:"எ.கா. https://sbi-kyc-update.xyz", pasteMessage:"எந்த செய்தியையும் இங்கே ஒட்டவும்", analyzeBtn:"சோதிக்கவும்", analyzing:"பகுப்பாய்வு செய்கிறது...", msgPlaceholder:"வங்கி SMS, WhatsApp செய்தி அல்லது மின்னஞ்சலை இங்கே ஒட்டவும்.", phoneTitle:"தொலைபேசி எண் சோதனை", phoneSubtitle:"எண் மோசடியுடன் தொடர்புடையதா என்று சோதிக்கவும்", enterPhone:"தொலைபேசி எண்ணை உள்ளிடவும்", checkBtn:"சோதிக்கவும்", checking:"சோதிக்கிறது...", phonePlaceholder:"+91 XXXXXXXXXX", quizTitle:"விழிப்புணர்வு வினாவிடை", quizSubtitle:"உங்கள் அறிவை சோதியுங்கள்!", reportTitle:"மோசடியை புகாரளிக்கவும்", reportSubtitle:"மற்றவர்களை பாதுகாக்க புகார் அளிக்கவும்", fraudType:"மோசடி வகை *", describe:"என்ன நடந்தது *", contactLabel:"உங்கள் தொடர்பு (விருப்பமானது)", submitReport:"புகார் அனுப்பவும்", reportDoneTitle:"புகார் அனுப்பப்பட்டது!", reportDoneSub:"நன்றி. cybercrime.gov.in-லும் புகார் அளிக்கவும்.", submitAnother:"மேலும் புகார்", emergencyNote:"நிதி இழப்பிற்கு 1930ஐ உடனே அழைக்கவும்", selectFraud:"மோசடி வகையை தேர்ந்தெடுக்கவும்...", scansToday:"இன்றைய சோதனைகள்", quizComplete:"வினாவிடை முடிந்தது!", nextQ:"அடுத்த கேள்வி →", submitQuiz:"மதிப்பெண் காண்க", restartQuiz:"மீண்டும் முயற்சி", correct:"✅ சரி!", wrong:"❌ தவறு —", explanation:"காரணம்:", riskScore:"அபாய மதிப்பெண்", verdictLabel:"தீர்ப்பு", redFlags:"⚠️ எச்சரிக்கை அறிகுறிகள்", safeIndicators:"✅ உண்மையான அறிகுறிகள்", manipulation:"🧠 உளவியல் தந்திரங்கள்", recommendation:"📋 நீங்கள் என்ன செய்ய வேண்டும்", confidence:"நம்பிக்கை அளவு", reasoning:"AI பகுப்பாய்வு", scamLibraryTitle:"மோசடி வழிகாட்டி", scamLibrarySub:"பொதுவான டிஜிட்டல் மோசடிகளை அடையாளம் காணுங்கள்", linkScannerTitle:"இணைப்பு சோதனை", linkScannerSub:"எந்த இணைப்பையும் சோதிக்கவும்", msgAnalyzerTitle:"செய்தி சோதனை", msgAnalyzerSub:"வங்கி SMS, WhatsApp, மின்னஞ்சல் — உண்மையா போலியா", analyzeScanning:"இணைப்பு பாதுகாப்பை சோதிக்கிறது...", analyzeMsg:"செய்தியை கவனமாக படிக்கிறது...", analyzePhone:"எண்ணை சோதிக்கிறது...", startQuiz:"வினாவிடை தொடங்கு →", allLevels:"அனைத்தும்", beginner:"தொடக்கநிலை", intermediate:"இடைநிலை", advanced:"மேம்பட்ட நிலை", emergencyContacts:"அவசர தொடர்புகள்", genuineNote:"💡 குறிப்பு: VM-SBIINB, AD-HDFCBK போன்ற அதிகாரப்பூர்வ Sender ID-யில் இருந்து வரும் வங்கி SMS பொதுவாக உண்மையானவை." },
   te: { appName:"ఫ్రాడ్‌షీల్డ్", tagline:"భారతదేశపు AI మోసాల రక్షకుడు", tabs:["🔗 లింక్ స్కాన్","📧 సందేశ తనిఖీ","📞 ఫోన్ తనిఖీ","📚 మోసం గైడ్","🧠 క్విజ్","🚨 రిపోర్ట్"], emergency:"హెల్ప్‌లైన్", alertBanner:"⚠️  డిజిటల్ అరెస్ట్ మోసాలు 400% పెరిగాయి — ఏ ప్రభుత్వ సంస్థ కూడా ఆన్‌లైన్‌లో అరెస్ట్ చేయదు  ⚠️", enterUrl:"అనుమానాస్పద లింక్ ఇక్కడ పేస్ట్ చేయండి", scanBtn:"స్కాన్ చేయండి", scanning:"స్కాన్ అవుతోంది...", urlPlaceholder:"ఉదా. https://sbi-kyc-update.xyz", pasteMessage:"ఏదైనా సందేశం ఇక్కడ పేస్ట్ చేయండి", analyzeBtn:"తనిఖీ చేయండి", analyzing:"విశ్లేషిస్తోంది...", msgPlaceholder:"బ్యాంక్ SMS, WhatsApp సందేశం లేదా ఇమెయిల్ ఇక్కడ పేస్ట్ చేయండి.", phoneTitle:"ఫోన్ నంబర్ తనిఖీ", phoneSubtitle:"నంబర్ మోసంతో అనుసంధానించబడిందో తనిఖీ చేయండి", enterPhone:"ఫోన్ నంబర్ నమోదు చేయండి", checkBtn:"తనిఖీ చేయి", checking:"తనిఖీ అవుతోంది...", phonePlaceholder:"+91 XXXXXXXXXX", quizTitle:"అవగాహన క్విజ్", quizSubtitle:"మీ జ్ఞానాన్ని పరీక్షించుకోండి!", reportTitle:"మోసాన్ని రిపోర్ట్ చేయండి", reportSubtitle:"ఇతరులను రక్షించడానికి రిపోర్ట్ చేయండి", fraudType:"మోసం రకం *", describe:"ఏం జరిగిందో వివరించండి *", contactLabel:"మీ సంప్రదింపు (ఐచ్ఛికం)", submitReport:"రిపోర్ట్ పంపండి", reportDoneTitle:"రిపోర్ట్ పంపబడింది!", reportDoneSub:"ధన్యవాదాలు. cybercrime.gov.in-లో కూడా రిపోర్ట్ చేయండి.", submitAnother:"మరొక రిపోర్ట్", emergencyNote:"ఆర్థిక నష్టాలకు వెంటనే 1930కి కాల్ చేయండి", selectFraud:"మోసం రకాన్ని ఎంచుకోండి...", scansToday:"నేటి స్కాన్లు", quizComplete:"క్విజ్ పూర్తయింది!", nextQ:"తదుపరి ప్రశ్న →", submitQuiz:"స్కోర్ చూడండి", restartQuiz:"మళ్ళీ ప్రయత్నించు", correct:"✅ సరైనది!", wrong:"❌ తప్పు —", explanation:"కారణం:", riskScore:"రిస్క్ స్కోర్", verdictLabel:"నిర్ణయం", redFlags:"⚠️ హెచ్చరిక సంకేతాలు", safeIndicators:"✅ నిజమైన సంకేతాలు", manipulation:"🧠 మానసిక వ్యూహాలు", recommendation:"📋 మీరు ఏమి చేయాలి", confidence:"నమ్మకం స్థాయి", reasoning:"AI విశ్లేషణ", scamLibraryTitle:"మోసం గైడ్", scamLibrarySub:"సాధారణ డిజిటల్ మోసాలను గుర్తించడం నేర్చుకోండి", linkScannerTitle:"లింక్ స్కానర్", linkScannerSub:"ఏదైనా లింక్ తనిఖీ చేయండి", msgAnalyzerTitle:"సందేశ తనిఖీ", msgAnalyzerSub:"బ్యాంక్ SMS, WhatsApp, ఇమెయిల్ — నిజమా నకలా", analyzeScanning:"లింక్ భద్రతను తనిఖీ చేస్తోంది...", analyzeMsg:"సందేశాన్ని జాగ్రత్తగా చదువుతోంది...", analyzePhone:"నంబర్ తనిఖీ అవుతోంది...", startQuiz:"క్విజ్ ప్రారంభించు →", allLevels:"అన్నీ", beginner:"ప్రారంభ స్థాయి", intermediate:"మధ్యస్థ స్థాయి", advanced:"అధునాతన స్థాయి", emergencyContacts:"అత్యవసర సంప్రదింపులు", genuineNote:"💡 గమనిక: VM-SBIINB, AD-HDFCBK వంటి అధికారిక Sender ID నుండి వచ్చే బ్యాంక్ SMS సాధారణంగా నిజమైనవి." },
-  mr: { appName:"फ्रॉडशील्ड", tagline:"भारताचा AI फसवणूक रक्षक", tabs:["🔗 लिंक तपासणी","📧 संदेश तपासणी","📞 फोन तपासणी","📚 फसवणूक मार्गदर्शिका","🧠 प्रश्नमंजुषा","🚨 तक्रार"], emergency:"हेल्पलाइन", alertBanner:"⚠️  डिजिटल अटक घोटाळे 400% वाढले — कोणतीही सरकारी यंत्रणा ऑनलाइन अटक करत नाही  ⚠️", enterUrl:"संशयास्पद लिंक येथे टाका", scanBtn:"तपासा", scanning:"तपासत आहे...", urlPlaceholder:"उदा. https://sbi-kyc-update.xyz", pasteMessage:"कोणताही संदेश येथे टाका", analyzeBtn:"तपासा", analyzing:"विश्लेषण होत आहे...", msgPlaceholder:"बँक SMS, WhatsApp संदेश किंवा ईमेल येथे टाका.", phoneTitle:"फोन नंबर तपासणी", phoneSubtitle:"नंबर फसवणुकीशी जोडलेला आहे का ते तपासा", enterPhone:"फोन नंबर टाका", checkBtn:"तपासा", checking:"तपासत आहे...", phonePlaceholder:"+91 XXXXXXXXXX", quizTitle:"जागरूकता प्रश्नमंजुषा", quizSubtitle:"तुमचे ज्ञान तपासा!", reportTitle:"फसवणूक तक्रार करा", reportSubtitle:"इतरांना वाचवण्यासाठी तक्रार करा", fraudType:"फसवणुकीचा प्रकार *", describe:"काय झाले *", contactLabel:"तुमचा संपर्क (पर्यायी)", submitReport:"तक्रार पाठवा", reportDoneTitle:"तक्रार पाठवली!", reportDoneSub:"धन्यवाद. cybercrime.gov.in वरही तक्रार करा.", submitAnother:"आणखी तक्रार", emergencyNote:"आर्थिक नुकसानासाठी लगेच 1930 वर कॉल करा", selectFraud:"फसवणुकीचा प्रकार निवडा...", scansToday:"आजच्या तपासण्या", quizComplete:"प्रश्नमंजुषा पूर्ण!", nextQ:"पुढील प्रश्न →", submitQuiz:"स्कोर पहा", restartQuiz:"पुन्हा प्रयत्न", correct:"✅ बरोबर!", wrong:"❌ चुकीचे —", explanation:"कारण:", riskScore:"जोखीम स्कोर", verdictLabel:"निर्णय", redFlags:"⚠️ धोक्याचे संकेत", safeIndicators:"✅ खरे असल्याचे संकेत", manipulation:"🧠 मनोवैज्ञानिक युक्त्या", recommendation:"📋 तुम्ही काय करावे", confidence:"विश्वास पातळी", reasoning:"AI विश्लेषण", scamLibraryTitle:"फसवणूक मार्गदर्शिका", scamLibrarySub:"सामान्य डिजिटल फसवणुका ओळखायला शिका", linkScannerTitle:"लिंक तपासणी", linkScannerSub:"कोणताही लिंक तपासा", msgAnalyzerTitle:"संदेश तपासणी", msgAnalyzerSub:"बँक SMS, WhatsApp, ईमेल — खरे की खोटे", analyzeScanning:"लिंक सुरक्षितता तपासत आहे...", analyzeMsg:"संदेश काळजीपूर्वक वाचत आहे...", analyzePhone:"नंबर तपासत आहे...", startQuiz:"प्रश्नमंजुषा सुरू करा →", allLevels:"सर्व", beginner:"नवशिके", intermediate:"मध्यम", advanced:"प्रगत", emergencyContacts:"आणीबाणी संपर्क", genuineNote:"💡 टीप: VM-SBIINB, AD-HDFCBK सारख्या अधिकृत Sender ID मधून आलेले बँक SMS सहसा खरे असतात." },
+  mr: { appName:"डिजीसेंट्री", tagline:"भारताचा AI फसवणूक रक्षक", tabs:["🔗 लिंक तपासणी","📧 संदेश तपासणी","📞 फोन तपासणी","📚 फसवणूक मार्गदर्शिका","🧠 प्रश्नमंजुषा","🚨 तक्रार"], emergency:"हेल्पलाइन", alertBanner:"⚠️  डिजिटल अटक घोटाळे 400% वाढले — कोणतीही सरकारी यंत्रणा ऑनलाइन अटक करत नाही  ⚠️", enterUrl:"संशयास्पद लिंक येथे टाका", scanBtn:"तपासा", scanning:"तपासत आहे...", urlPlaceholder:"उदा. https://sbi-kyc-update.xyz", pasteMessage:"कोणताही संदेश येथे टाका", analyzeBtn:"तपासा", analyzing:"विश्लेषण होत आहे...", msgPlaceholder:"बँक SMS, WhatsApp संदेश किंवा ईमेल येथे टाका.", phoneTitle:"फोन नंबर तपासणी", phoneSubtitle:"नंबर फसवणुकीशी जोडलेला आहे का ते तपासा", enterPhone:"फोन नंबर टाका", checkBtn:"तपासा", checking:"तपासत आहे...", phonePlaceholder:"+91 XXXXXXXXXX", quizTitle:"जागरूकता प्रश्नमंजुषा", quizSubtitle:"तुमचे ज्ञान तपासा!", reportTitle:"फसवणूक तक्रार करा", reportSubtitle:"इतरांना वाचवण्यासाठी तक्रार करा", fraudType:"फसवणुकीचा प्रकार *", describe:"काय झाले *", contactLabel:"तुमचा संपर्क (पर्यायी)", submitReport:"तक्रार पाठवा", reportDoneTitle:"तक्रार पाठवली!", reportDoneSub:"धन्यवाद. cybercrime.gov.in वरही तक्रार करा.", submitAnother:"आणखी तक्रार", emergencyNote:"आर्थिक नुकसानासाठी लगेच 1930 वर कॉल करा", selectFraud:"फसवणुकीचा प्रकार निवडा...", scansToday:"आजच्या तपासण्या", quizComplete:"प्रश्नमंजुषा पूर्ण!", nextQ:"पुढील प्रश्न →", submitQuiz:"स्कोर पहा", restartQuiz:"पुन्हा प्रयत्न", correct:"✅ बरोबर!", wrong:"❌ चुकीचे —", explanation:"कारण:", riskScore:"जोखीम स्कोर", verdictLabel:"निर्णय", redFlags:"⚠️ धोक्याचे संकेत", safeIndicators:"✅ खरे असल्याचे संकेत", manipulation:"🧠 मनोवैज्ञानिक युक्त्या", recommendation:"📋 तुम्ही काय करावे", confidence:"विश्वास पातळी", reasoning:"AI विश्लेषण", scamLibraryTitle:"फसवणूक मार्गदर्शिका", scamLibrarySub:"सामान्य डिजिटल फसवणुका ओळखायला शिका", linkScannerTitle:"लिंक तपासणी", linkScannerSub:"कोणताही लिंक तपासा", msgAnalyzerTitle:"संदेश तपासणी", msgAnalyzerSub:"बँक SMS, WhatsApp, ईमेल — खरे की खोटे", analyzeScanning:"लिंक सुरक्षितता तपासत आहे...", analyzeMsg:"संदेश काळजीपूर्वक वाचत आहे...", analyzePhone:"नंबर तपासत आहे...", startQuiz:"प्रश्नमंजुषा सुरू करा →", allLevels:"सर्व", beginner:"नवशिके", intermediate:"मध्यम", advanced:"प्रगत", emergencyContacts:"आणीबाणी संपर्क", genuineNote:"💡 टीप: VM-SBIINB, AD-HDFCBK सारख्या अधिकृत Sender ID मधून आलेले बँक SMS सहसा खरे असतात." },
   gu: { appName:"ફ્રૉડશીલ્ડ", tagline:"ભારતનો AI છેતરપિંડી રક્ષક", tabs:["🔗 લિંક તપાસ","📧 સંદેશ તપાસ","📞 ફોન તપાસ","📚 છેતરપિંડી માર્ગદર્શિકા","🧠 ક્વિઝ","🚨 ફરિયાદ"], emergency:"હેલ્પલાઇન", alertBanner:"⚠️  ડિજિટલ ધરપકડ છેતરપિંડી 400% વધી — કોઈ સરકારી એજન્સી ઑનલાઇન ધરપકડ કરતી નથી  ⚠️", enterUrl:"શંકાસ્પદ લિંક અહીં નાખો", scanBtn:"તપાસો", scanning:"તપાસ થઈ રહી છે...", urlPlaceholder:"ઉદા. https://sbi-kyc-update.xyz", pasteMessage:"કોઈ પણ સંદેશ અહીં નાખો", analyzeBtn:"તપાસો", analyzing:"વિશ્લેષણ થઈ રહ્યું છે...", msgPlaceholder:"બૅન્ક SMS, WhatsApp સંદેશ અથવા ઈમેઈલ અહીં નાખો.", phoneTitle:"ફોન નંબર તપાસ", phoneSubtitle:"નંબર છેતરપિંડી સાથે જોડાયેલ છે કે નહીં તે તપાસો", enterPhone:"ફોન નંબર નાખો", checkBtn:"તપાસો", checking:"તપાસ થઈ રહી છે...", phonePlaceholder:"+91 XXXXXXXXXX", quizTitle:"જાગૃતિ ક્વિઝ", quizSubtitle:"તમારું જ્ઞાન ચકાસો!", reportTitle:"છેતરપિંડીની ફરિયાદ", reportSubtitle:"બીજાઓને બચાવવા ફરિયાદ કરો", fraudType:"છેતરપિંડીનો પ્રકાર *", describe:"શું થયું *", contactLabel:"તમારો સંપર્ક (વૈકલ્પિક)", submitReport:"ફરિયાદ મોકલો", reportDoneTitle:"ફરિયાદ મોકલાઈ!", reportDoneSub:"આભાર. cybercrime.gov.in પર પણ ફરિયાદ કરો.", submitAnother:"બીજી ફરિયાદ", emergencyNote:"આર્થિક નુકસાન માટે 1930 પર ફોન કરો", selectFraud:"છેતરપિંડીનો પ્રકાર પસંદ કરો...", scansToday:"આજની તપાસ", quizComplete:"ક્વિઝ પૂર્ણ!", nextQ:"આગળ →", submitQuiz:"સ્કોર જુઓ", restartQuiz:"ફરી પ્રયાસ", correct:"✅ સાચું!", wrong:"❌ ખોટું —", explanation:"કારણ:", riskScore:"જોખમ સ્કોર", verdictLabel:"નિર્ણય", redFlags:"⚠️ ચેતવણીના સંકેત", safeIndicators:"✅ વાસ્તવિક સંકેત", manipulation:"🧠 મનોવૈજ્ઞાનિક યુક્તિઓ", recommendation:"📋 તમારે શું કરવું", confidence:"વિશ્વાસ સ્તર", reasoning:"AI વિશ્લેષણ", scamLibraryTitle:"છેતરપિંડી માર્ગદર્શિકા", scamLibrarySub:"સામાન્ય ડિજિટલ છેતરપિંડી ઓળખો", linkScannerTitle:"લિંક તપાસ", linkScannerSub:"કોઈ પણ લિંક તપાસો", msgAnalyzerTitle:"સંદેશ તપાસ", msgAnalyzerSub:"બૅન્ક SMS, WhatsApp, ઈમેઈલ — સાચું કે ખોટું", analyzeScanning:"લિંક સુરક્ષા તપાસ...", analyzeMsg:"સંદેશ ધ્યાનથી વાંચ...", analyzePhone:"નંબર તપાસ...", startQuiz:"ક્વિઝ શરૂ →", allLevels:"બધા", beginner:"શ�ૂ આત", intermediate:"મધ્યમ", advanced:"પ્રગત", emergencyContacts:"કટોકટી સંપર્ક", genuineNote:"💡 નોંધ: VM-SBIINB, AD-HDFCBK જેવા અધિકૃત Sender ID ના બૅન્ક SMS સામાન્ય રીતે સાચા હોય છે." },
   pa: { appName:"ਫ੍ਰਾਡਸ਼ੀਲਡ", tagline:"ਭਾਰਤ ਦਾ AI ਧੋਖਾਧੜੀ ਰੱਖਿਅਕ", tabs:["🔗 ਲਿੰਕ ਜਾਂਚ","📧 ਸੁਨੇਹਾ ਜਾਂਚ","📞 ਫੋਨ ਜਾਂਚ","📚 ਧੋਖਾ ਗਾਈਡ","🧠 ਕੁਇਜ਼","🚨 ਰਿਪੋਰਟ"], emergency:"ਹੈਲਪਲਾਈਨ", alertBanner:"⚠️  ਡਿਜੀਟਲ ਗ੍ਰਿਫਤਾਰੀ ਧੋਖੇ 400% ਵਧੇ — ਕੋਈ ਸਰਕਾਰੀ ਏਜੰਸੀ ਆਨਲਾਈਨ ਗ੍ਰਿਫਤਾਰ ਨਹੀਂ ਕਰਦੀ  ⚠️", enterUrl:"ਸ਼ੱਕੀ ਲਿੰਕ ਇੱਥੇ ਪਾਓ", scanBtn:"ਜਾਂਚ ਕਰੋ", scanning:"ਜਾਂਚ ਹੋ ਰਹੀ ਹੈ...", urlPlaceholder:"ਜਿਵੇਂ https://sbi-kyc-update.xyz", pasteMessage:"ਕੋਈ ਵੀ ਸੁਨੇਹਾ ਇੱਥੇ ਪਾਓ", analyzeBtn:"ਜਾਂਚ ਕਰੋ", analyzing:"ਵਿਸ਼ਲੇਸ਼ਣ ਹੋ ਰਿਹਾ ਹੈ...", msgPlaceholder:"ਬੈਂਕ SMS, WhatsApp ਸੁਨੇਹਾ ਜਾਂ ਈਮੇਲ ਇੱਥੇ ਪਾਓ।", phoneTitle:"ਫੋਨ ਨੰਬਰ ਜਾਂਚ", phoneSubtitle:"ਦੇਖੋ ਕਿ ਨੰਬਰ ਕਿਸੇ ਧੋਖੇ ਨਾਲ ਜੁੜਿਆ ਹੈ", enterPhone:"ਫੋਨ ਨੰਬਰ ਪਾਓ", checkBtn:"ਜਾਂਚ", checking:"ਜਾਂਚ...", phonePlaceholder:"+91 XXXXXXXXXX", quizTitle:"ਜਾਗਰੂਕਤਾ ਕੁਇਜ਼", quizSubtitle:"ਆਪਣਾ ਗਿਆਨ ਜਾਂਚੋ!", reportTitle:"ਧੋਖੇ ਦੀ ਰਿਪੋਰਟ", reportSubtitle:"ਦੂਜਿਆਂ ਨੂੰ ਬਚਾਓ", fraudType:"ਧੋਖੇ ਦੀ ਕਿਸਮ *", describe:"ਕੀ ਹੋਇਆ *", contactLabel:"ਤੁਹਾਡਾ ਸੰਪਰਕ (ਵਿਕਲਪਿਕ)", submitReport:"ਰਿਪੋਰਟ ਭੇਜੋ", reportDoneTitle:"ਰਿਪੋਰਟ ਭੇਜੀ ਗਈ!", reportDoneSub:"ਧੰਨਵਾਦ। cybercrime.gov.in 'ਤੇ ਵੀ ਰਿਪੋਰਟ ਕਰੋ।", submitAnother:"ਹੋਰ ਰਿਪੋਰਟ", emergencyNote:"ਵਿੱਤੀ ਨੁਕਸਾਨ ਲਈ 1930 'ਤੇ ਕਾਲ ਕਰੋ", selectFraud:"ਧੋਖੇ ਦੀ ਕਿਸਮ ਚੁਣੋ...", scansToday:"ਅੱਜ ਦੀਆਂ ਜਾਂਚਾਂ", quizComplete:"ਕੁਇਜ਼ ਪੂਰਾ!", nextQ:"ਅਗਲਾ ਸਵਾਲ →", submitQuiz:"ਸਕੋਰ ਦੇਖੋ", restartQuiz:"ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼", correct:"✅ ਸਹੀ!", wrong:"❌ ਗਲਤ —", explanation:"ਕਾਰਨ:", riskScore:"ਜੋਖਮ ਸਕੋਰ", verdictLabel:"ਫੈਸਲਾ", redFlags:"⚠️ ਚੇਤਾਵਨੀ ਦੇ ਸੰਕੇਤ", safeIndicators:"✅ ਅਸਲੀ ਹੋਣ ਦੇ ਸੰਕੇਤ", manipulation:"🧠 ਮਨੋਵਿਗਿਆਨਕ ਚਾਲਾਂ", recommendation:"📋 ਤੁਹਾਨੂੰ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ", confidence:"ਭਰੋਸੇ ਦਾ ਪੱਧਰ", reasoning:"AI ਵਿਸ਼ਲੇਸ਼ਣ", scamLibraryTitle:"ਧੋਖਾ ਗਾਈਡ", scamLibrarySub:"ਆਮ ਡਿਜੀਟਲ ਧੋਖਿਆਂ ਨੂੰ ਪਛਾਣੋ", linkScannerTitle:"ਲਿੰਕ ਜਾਂਚ", linkScannerSub:"ਕੋਈ ਵੀ ਲਿੰਕ ਜਾਂਚੋ", msgAnalyzerTitle:"ਸੁਨੇਹਾ ਜਾਂਚ", msgAnalyzerSub:"ਬੈਂਕ SMS, WhatsApp, ਈਮੇਲ — ਅਸਲੀ ਜਾਂ ਨਕਲੀ", analyzeScanning:"ਲਿੰਕ ਸੁਰੱਖਿਆ ਜਾਂਚ...", analyzeMsg:"ਸੁਨੇਹਾ ਧਿਆਨ ਨਾਲ ਪੜ੍ਹਿਆ ਜਾ ਰਿਹਾ ਹੈ...", analyzePhone:"ਨੰਬਰ ਜਾਂਚਿਆ ਜਾ ਰਿਹਾ ਹੈ...", startQuiz:"ਕੁਇਜ਼ ਸ਼ੁਰੂ →", allLevels:"ਸਭ", beginner:"ਸ਼ੁਰੂਆਤੀ", intermediate:"ਵਿਚਕਾਰਲਾ", advanced:"ਉੱਨਤ", emergencyContacts:"ਐਮਰਜੈਂਸੀ ਸੰਪਰਕ", genuineNote:"💡 ਨੋਟ: VM-SBIINB, AD-HDFCBK ਵਰਗੇ ਅਧਿਕਾਰਤ Sender ID ਤੋਂ ਬੈਂਕ SMS ਆਮਤੌਰ 'ਤੇ ਅਸਲੀ ਹੁੰਦੇ ਹਨ।" },
   kn: { appName:"ಫ್ರಾಡ್‌ಶೀಲ್ಡ್", tagline:"ಭಾರತದ AI ವಂಚನೆ ರಕ್ಷಕ", tabs:["🔗 ಲಿಂಕ್ ಪರಿಶೀಲನೆ","📧 ಸಂದೇಶ ಪರಿಶೀಲನೆ","📞 ಫೋನ್ ಪರಿಶೀಲನೆ","📚 ವಂಚನೆ ಮಾರ್ಗದರ್ಶಿ","🧠 ರಸಪ್ರಶ್ನೆ","🚨 ವರದಿ"], emergency:"ಸಹಾಯವಾಣಿ", alertBanner:"⚠️  ಡಿಜಿಟಲ್ ಬಂಧನ ವಂಚನೆಗಳು 400% ಹೆಚ್ಚಾಗಿವೆ — ಯಾವ ಸರ್ಕಾರಿ ಸಂಸ್ಥೆಯೂ ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಬಂಧಿಸುವುದಿಲ್ಲ  ⚠️", enterUrl:"ಅನುಮಾನಾಸ್ಪದ ಲಿಂಕ್ ಇಲ್ಲಿ ಹಾಕಿ", scanBtn:"ಪರಿಶೀಲಿಸಿ", scanning:"ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ...", urlPlaceholder:"ಉದಾ. https://sbi-kyc-update.xyz", pasteMessage:"ಯಾವುದೇ ಸಂದೇಶ ಇಲ್ಲಿ ಹಾಕಿ", analyzeBtn:"ಪರಿಶೀಲಿಸಿ", analyzing:"ವಿಶ್ಲೇಷಿಸಲಾಗುತ್ತಿದೆ...", msgPlaceholder:"ಬ್ಯಾಂಕ್ SMS, WhatsApp ಸಂದೇಶ ಅಥವಾ ಇಮೇಲ್ ಇಲ್ಲಿ ಹಾಕಿ.", phoneTitle:"ಫೋನ್ ಸಂಖ್ಯೆ ಪರಿಶೀಲನೆ", phoneSubtitle:"ಸಂಖ್ಯೆ ವಂಚನೆಗೆ ಸಂಬಂಧಿಸಿದೆಯೇ ಎಂದು ತಿಳಿಯಿರಿ", enterPhone:"ಫೋನ್ ಸಂಖ್ಯೆ ನಮೂದಿಸಿ", checkBtn:"ಪರಿಶೀಲಿಸಿ", checking:"ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ...", phonePlaceholder:"+91 XXXXXXXXXX", quizTitle:"ಜಾಗೃತಿ ರಸಪ್ರಶ್ನೆ", quizSubtitle:"ನಿಮ್ಮ ಜ್ಞಾನ ಪರೀಕ್ಷಿಸಿ!", reportTitle:"ವಂಚನೆ ವರದಿ ಮಾಡಿ", reportSubtitle:"ಇತರರನ್ನು ರಕ್ಷಿಸಲು ವರದಿ ಮಾಡಿ", fraudType:"ವಂಚನೆ ಪ್ರಕಾರ *", describe:"ಏನಾಯಿತು *", contactLabel:"ನಿಮ್ಮ ಸಂಪರ್ಕ (ಐಚ್ಛಿಕ)", submitReport:"ವರದಿ ಕಳುಹಿಸಿ", reportDoneTitle:"ವರದಿ ಕಳುಹಿಸಲಾಗಿದೆ!", reportDoneSub:"ಧನ್ಯವಾದ. cybercrime.gov.in ನಲ್ಲಿಯೂ ವರದಿ ಮಾಡಿ.", submitAnother:"ಮತ್ತೊಂದು ವರದಿ", emergencyNote:"ಆರ್ಥಿಕ ನಷ್ಟಕ್ಕಾಗಿ ಈಗಲೇ 1930 ಗೆ ಕರೆ ಮಾಡಿ", selectFraud:"ವಂಚನೆ ಪ್ರಕಾರ ಆಯ್ಕೆಮಾಡಿ...", scansToday:"ಇಂದಿನ ಪರಿಶೀಲನೆಗಳು", quizComplete:"ರಸಪ್ರಶ್ನೆ ಮುಗಿಯಿತು!", nextQ:"ಮುಂದಿನ ಪ್ರಶ್ನೆ →", submitQuiz:"ಅಂಕ ನೋಡಿ", restartQuiz:"ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ", correct:"✅ ಸರಿ!", wrong:"❌ ತಪ್ಪು —", explanation:"ಕಾರಣ:", riskScore:"ಅಪಾಯದ ಅಂಕ", verdictLabel:"ತೀರ್ಪು", redFlags:"⚠️ ಎಚ್ಚರಿಕೆ ಸಂಕೇತಗಳು", safeIndicators:"✅ ನಿಜವಾದ ಸಂಕೇತಗಳು", manipulation:"🧠 ಮಾನಸಿಕ ತಂತ್ರಗಳು", recommendation:"📋 ನೀವು ಏನು ಮಾಡಬೇಕು", confidence:"ವಿಶ್ವಾಸ ಮಟ್ಟ", reasoning:"AI ವಿಶ್ಲೇಷಣೆ", scamLibraryTitle:"ವಂಚನೆ ಮಾರ್ಗದರ್ಶಿ", scamLibrarySub:"ಸಾಮಾನ್ಯ ಡಿಜಿಟಲ್ ವಂಚನೆಗಳನ್ನು ಗುರುತಿಸಿ", linkScannerTitle:"ಲಿಂಕ್ ಪರಿಶೀಲಕ", linkScannerSub:"ಯಾವುದೇ ಲಿಂಕ್ ಪರಿಶೀಲಿಸಿ", msgAnalyzerTitle:"ಸಂದೇಶ ಪರಿಶೀಲಕ", msgAnalyzerSub:"ಬ್ಯಾಂಕ್ SMS, WhatsApp, ಇಮೇಲ್ — ನಿಜ ಅಥವಾ ನಕಲಿ", analyzeScanning:"ಲಿಂಕ್ ಸುರಕ್ಷತೆ ಪರಿಶೀಲನೆ...", analyzeMsg:"ಸಂದೇಶ ಎಚ್ಚರಿಕೆಯಿಂದ ಓದಲಾಗುತ್ತಿದೆ...", analyzePhone:"ಸಂಖ್ಯೆ ಪರಿಶೀಲನೆ...", startQuiz:"ರಸಪ್ರಶ್ನೆ ಪ್ರಾರಂಭಿಸಿ →", allLevels:"ಎಲ್ಲಾ", beginner:"ಆರಂಭಿಕ", intermediate:"ಮಧ್ಯಮ", advanced:"ಮುಂದುವರಿದ", emergencyContacts:"ತುರ್ತು ಸಂಪರ್ಕಗಳು", genuineNote:"💡 ಗಮನಿಸಿ: VM-SBIINB, AD-HDFCBK ನಂತಹ ಅಧಿಕೃತ Sender ID ನಿಂದ ಬಂದ ಬ್ಯಾಂಕ್ SMS ಸಾಮಾನ್ಯವಾಗಿ ನಿಜವಾದವು." },
@@ -306,7 +306,7 @@ const FONT_STYLE = `
 const FONT = "'Noto Sans','Noto Sans Devanagari','Noto Sans Bengali','Noto Sans Tamil','Noto Sans Telugu','Noto Sans Gujarati','Noto Sans Gurmukhi','Noto Sans Kannada','Noto Sans Malayalam','Noto Naskh Arabic',sans-serif";
 
 /* ─── MAIN APP ──────────────────────────────────────────────────────────── */
-export default function FraudShield() {
+export default function DigiSentry() {
   const [lang, setLang] = useState("en");
   const [showLang, setShowLang] = useState(false);
   const [tab, setTab] = useState(0);
@@ -336,7 +336,7 @@ export default function FraudShield() {
   async function callAI(system, userMsg, setRes, setLoad) {
     setLoad(true); setRes(null);
     try {
-      const r = await fetch("/api/claude",{
+      const r = await fetch("https://api.anthropic.com/v1/messages",{
         method:"POST", headers:{"Content-Type":"application/json"},
         body:JSON.stringify({ model:"claude-sonnet-4-20250514", max_tokens:1200,
           system, messages:[{role:"user",content:userMsg}] })
@@ -348,46 +348,47 @@ export default function FraudShield() {
     setLoad(false);
   }
 
-  const URL_SYSTEM = `You are FraudShield, an expert cybersecurity AI for Indian users. Analyze URLs for fraud risk.
+  const URL_SYSTEM = `You are DigiSentry, an expert cybersecurity AI for Indian users. Analyze URLs for fraud risk.
 IMPORTANT: Be accurate — not everything is dangerous. Legitimate websites (google.com, sbi.co.in, onlinesbi.sbi, hdfcbank.com, amazon.in, irctc.co.in, gov.in domains etc.) should be marked SAFE.
 Only flag as DANGEROUS if there are clear fraud indicators like: misspelled domains, suspicious TLDs, URL shorteners leading to unknown sites, fake bank domains, etc.
 Respond ONLY in valid JSON (no markdown):
 {"verdict":"SAFE"|"SUSPICIOUS"|"DANGEROUS","riskScore":0-100,"summary":"clear one sentence for a general user","reasoning":"2-3 sentences explaining your assessment in simple language","redFlags":["specific red flag if any"],"safeIndicators":["specific safe indicator if any"],"recommendation":"exactly what the user should do"}`;
 
-  const MSG_SYSTEM = `You are FraudShield, an expert cybersecurity AI for Indian users. Analyze messages for fraud.
+  const MSG_SYSTEM = `You are DigiSentry, an expert cybersecurity AI for Indian users. Analyze messages for fraud.
 
-CRITICAL RULES ABOUT INDIAN SMS PREFIXES (TRAI DLT System):
-ALL of these prefixes indicate REGISTERED, LEGITIMATE senders — mark as LEGITIMATE unless there are clear fraud red flags:
-- VM (Verified Message) = Transactional SMS e.g. VM-SBIINB, VM-HDFCBK, VM-ICICIB
-- JD = Jio network transactional e.g. JD-KOTAKBK, JD-AXISBK, JD-PNBSMS
-- BW = Transactional e.g. BW-ICICIB, BW-SBIINB
-- TM = Transactional Message e.g. TM-AXISBK
-- CP = Transactional e.g. CP-PNBSMS
-- TP = Transactional promotional
-- AD = Advertising/Promotional e.g. AD-HDFCBK, AD-TATACAP
-- VA = Verified Advertising/Promotional e.g. VA-TATACAP, VA-APPLE
-- TA = Transactional Advertising
+IMPORTANT: The Indian SMS Sender ID (prefix) appears separately on the phone as the sender's contact name — NOT inside the message body. Users may or may not include it when pasting. Analyze both cases carefully.
 
-EXAMPLES OF LEGITIMATE MESSAGES:
-- "JD-KOTAKBK: Rs.5000 debited..." = LEGITIMATE bank transaction alert
-- "VM-SBIINB: Your OTP is 123456" = LEGITIMATE OTP from SBI
-- "VA-TATACAP: Special loan offer..." = LEGITIMATE promotional from Tata Capital
-- "AD-HDFCBK: Pre-approved offer..." = LEGITIMATE promotional from HDFC
+TRAI REGISTERED PREFIXES — Always LEGITIMATE from these senders:
+- VM, JD, BW, TM, CP, TP = Transactional (VM-SBIINB, JD-KOTAKBK, BW-ICICIB, TM-AXISBK)
+- AD, VA, TA = Promotional/Advertising (AD-HDFCBK, VA-TATACAP, VA-APPLE)
 
-ONLY flag as SCAM if there are CLEAR red flags:
-- Requests for OTP/PIN/password/CVV from the RECIPIENT
-- Suspicious links (not official bank domains)
-- Fake urgency threatening account closure
-- Requests to call unofficial numbers
-- Requests for money transfer to "secure" accounts
-- Messages from mobile numbers (+91 XXXXXXXXXX) claiming to be banks
+GENUINE BANK MESSAGE PATTERNS — Mark as LEGITIMATE even without prefix if message contains:
+- Masked account number (XX1234, XXXX1234) + transaction amount (Rs.XXXX or INR XXXX) + date = GENUINE transaction alert
+- OTP from a message that mentions your bank name without asking you to share it = GENUINE OTP
+- Balance update with masked account = GENUINE
+- Official bank helpline numbers (1800-XXX-XXXX toll free) = genuine indicator
+- Loan EMI deduction, credit card payment alerts with masked numbers = GENUINE
+- UPI transaction alerts with masked VPA or account = GENUINE
 
-SUSPICIOUS = some unusual elements but not clearly fraudulent
-Write reasoning in simple language a non-technical person understands.
-Respond ONLY in valid JSON (no markdown):
-{"verdict":"LEGITIMATE"|"SUSPICIOUS"|"SCAM","scamType":"type or null","riskScore":0-100,"summary":"clear one sentence for a general user","reasoning":"3-4 sentences in simple language explaining why this is legitimate/suspicious/scam","redFlags":["specific red flag found"],"safeIndicators":["specific genuine indicator found"],"recommendation":"exactly what the user should do — if LEGITIMATE say it is safe but remind them never to share OTP with anyone even if asked by official-looking SMS"}`;
+SCAM INDICATORS — Flag as SCAM if:
+- Asks recipient to SHARE OTP, PIN, CVV, password or Aadhaar
+- Contains suspicious links (not official bank domains like hdfcbank.com, sbi.co.in, icicibank.com)
+- Threatens account blocking unless you click a link or call an unofficial number
+- Asks you to install any app or software
+- Requests money transfer to any account
+- Claims you won a prize or lottery
+- Message comes from a mobile number (+91 XXXXXXXXXX) claiming to be a bank
 
-  const PHONE_SYSTEM = `You are FraudShield, expert in Indian phone fraud. Analyze phone numbers.
+SUSPICIOUS = has some unusual elements but not clearly fraud
+
+Write reasoning in simple non-technical language. Always explain WHY you reached your conclusion.
+If LEGITIMATE, clearly say the message appears genuine AND remind user never to share OTP with anyone.
+If SCAM, clearly explain what the scammer is trying to do.
+
+Respond ONLY in valid JSON (no markdown, no extra text):
+{"verdict":"LEGITIMATE"|"SUSPICIOUS"|"SCAM","scamType":"type or null","riskScore":0-100,"summary":"one clear sentence for a general user","reasoning":"3-4 sentences in simple language explaining your assessment","redFlags":["specific red flag found in the message"],"safeIndicators":["specific genuine indicator found"],"recommendation":"exactly what the user should do next"}`;
+
+  const PHONE_SYSTEM = `You are DigiSentry, expert in Indian phone fraud. Analyze phone numbers.
 Note: Most +91 mobile numbers are ordinary. Flag as LIKELY_FRAUD only if: international number claiming to be Indian bank/govt, known scam formats, VOIP numbers, spoofed emergency numbers.
 Respond ONLY in valid JSON (no markdown):
 {"verdict":"LIKELY_SAFE"|"SUSPICIOUS"|"LIKELY_FRAUD","riskScore":0-100,"summary":"one clear sentence","reasoning":"2-3 sentences in simple language","indicators":["specific indicator"],"numberType":"Mobile/Landline/International/VoIP/Unknown","possibleScamType":"type or null","recommendation":"what to do"}`;
@@ -756,7 +757,7 @@ Respond ONLY in valid JSON (no markdown):
       </main>
 
       <footer style={{borderTop:"1px solid #1e293b",padding:"16px 20px",textAlign:"center",fontSize:12,color:"#334155",fontWeight:600,letterSpacing:1}}>
-        FRAUDSHIELD v2 • PROTECTING INDIA FROM DIGITAL FRAUD • NOT A SUBSTITUTE FOR OFFICIAL CYBERCRIME REPORTING
+        DIGISENTRY v2 • YOUR DIGITAL GUARDIAN • NOT A SUBSTITUTE FOR OFFICIAL CYBERCRIME REPORTING
       </footer>
     </div>
   );
