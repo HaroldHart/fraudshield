@@ -1,20 +1,36 @@
 {
-  "name": "FraudShield — India's Fraud Protector",
-  "short_name": "FraudShield",
+  "name": "DigiSentry — India's Digital Guardian",
+  "short_name": "DigiSentry",
   "description": "AI-powered protection from digital fraud, scams and phishing in India",
   "start_url": "/",
+  "id": "/",
   "display": "standalone",
   "background_color": "#0f0f14",
   "theme_color": "#38bdf8",
   "orientation": "portrait",
+  "categories": ["security", "utilities", "education"],
+  "lang": "en-IN",
   "icons": [
     {
-      "src": "/icons.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "src": "https://api.dicebear.com/7.x/shapes/png?seed=digisentry&backgroundColor=0f0f14&size=192",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://api.dicebear.com/7.x/shapes/png?seed=digisentry&backgroundColor=0f0f14&size=512",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
-  "categories": ["security", "utilities", "education"],
-  "lang": "en-IN"
+  "screenshots": [
+    {
+      "src": "https://fraudshield-omega.vercel.app",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "DigiSentry Desktop View"
+    }
+  ]
 }
